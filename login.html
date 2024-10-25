@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        background-color: pink;
+
+        
+    }
+    #n1,#n2{
+        height: 40px;
+        width: 300px;
+    }
+    #form{
+        background-color: rgba(0, 0, 0, 25%);
+        margin: 500px;
+        padding: 20px;
+    }
+    #n3{
+        background-color: green;
+        color: white;
+        height: 50px;
+        width: 200px;
+    }
+</style>
+<body>
+    <div id="form">
+    <form onsubmit="return data()" action="index.html">
+        <h1>Mico Hospital</h1><br><br><br><br>
+        UserID:<br>
+        <input type="text" id="n1"  ><br><br>
+        password:<br>
+        <input type="text" id="n2" ><br><br>
+        <input type="submit" id="n3" value="submit" >&nbsp;&nbsp;
+    </form>
+    </div>
+    <script>  
+        function data()
+        {
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+
+        
+        if (a==""|| b=="" )
+        {
+            alert("All fields are mandatory");
+            return false;
+        }
+        else
+        return true;
+        }
+    </script>
+</body>
+</html>
